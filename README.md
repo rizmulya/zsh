@@ -4,3 +4,7 @@ git clone https://github.com/rizmulya/zsh.git && \
     sudo apt install zsh && \
     zsh
 ```
+
+```
+./install.sh "myusername"
+```
