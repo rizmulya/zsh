@@ -6,12 +6,11 @@ fi
 
 apt install zsh
 zsh
+
 chsh -s /bin/zsh $1
-su -
 chsh -s /bin/zsh root
+cp .zshrc ~
+cp zsh/* /usr/share -r
 
 su $1
 cp .zshrc ~
-sudo su
-cp .zshrc ~
-cp zsh/* /usr/share -r
