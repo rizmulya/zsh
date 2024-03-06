@@ -4,9 +4,6 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
-apt install zsh
-zsh
-
 chsh -s /bin/zsh $1
 chsh -s /bin/zsh root
 cp .zshrc ~
