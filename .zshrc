@@ -1,16 +1,16 @@
 # ~/.zshrc file for zsh interactive shells.
 # see /usr/share/doc/zsh/examples/zshrc for examples
 
-# >>> custom >>>
-# show git branch
-# run ( $ autoload -Uz compinit && compinit ) to activate
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-RPROMPT='${vcs_info_msg_0_}'
-zstyle ':vcs_info:git:*' formats '%b'
-# <<< custom <<<
+## >>> custom >>>
+## show git branch
+## run ( $ autoload -Uz compinit && compinit ) to activate
+#autoload -Uz vcs_info
+#precmd_vcs_info() { vcs_info }
+#precmd_functions+=( precmd_vcs_info )
+#setopt prompt_subst
+#RPROMPT='${vcs_info_msg_0_}'
+#zstyle ':vcs_info:git:*' formats '%b'
+## <<< custom <<<
 
 
 setopt autocd              # change directory just by typing its name
